@@ -1,0 +1,44 @@
+.submenu-container {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    background: #f2f2f2;
+    border: 1px solid #cecece;
+    border-top: none;
+    padding: 1rem;
+    z-index: 1001;
+    opacity: 0;
+    visibility: visible;
+    transform: rotateY(180deg);
+    transform-origin: top;
+    transition: .4s opacity ease, .4s transform cubic-bezier(0.902, 0.149, 0.22, 0.934)
+
+}
+
+.navigation-items>ul>li:hover>a+.submenu-container{
+    opacity:1;
+    visibility: visible;
+
+}
+main nav {
+    width: 80%;
+    position: relative;
+    margin: 0 auto;
+}
+#main-navigation-container{
+    width:100%;
+    background:#03596d;
+}
+.navigation-items{
+    float:right;
+}
+.navigation-items>ul>li{
+    float:left;
+    height:100%
+}
+.navigation-items>ul>li>a{
+    line-height: 3rem;
+    display: inline-block;
+    padding: 0 1rem;
+}
+
