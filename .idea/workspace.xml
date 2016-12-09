@@ -7,8 +7,8 @@
       <change type="DELETED" beforePath="$PROJECT_DIR$/home.css.txt" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/home1.css" afterPath="" />
       <change type="DELETED" beforePath="$PROJECT_DIR$/index.html.txt" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/home1.css" afterPath="$PROJECT_DIR$/css/home1.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/parallax.html" afterPath="$PROJECT_DIR$/parallax.html" />
     </list>
     <ignored path="aravali-web.iws" />
     <ignored path=".idea/workspace.xml" />

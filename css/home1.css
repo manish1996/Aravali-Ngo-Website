@@ -61,7 +61,7 @@ nav{perespective:800px; z-index:999}
     padding: 1rem;
     z-index: 1001;
     opacity: 0;
-    visibility: visible;
+    visibility: hidden;
     transform: rotateY(180deg);
     transform-origin: top;
     transition: .4s opacity ease, .4s transform cubic-bezier(0.902, 0.149, 0.22, 0.934)
