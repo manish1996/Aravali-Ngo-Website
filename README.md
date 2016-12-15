@@ -1,2 +1,3 @@
 # Aravali-Ngo-Website
-Its a real life project- a website for aravali ngo. 
+
+The project is created by IIITV students the part of the Rural Internship from IIIT VADODADRA. 
