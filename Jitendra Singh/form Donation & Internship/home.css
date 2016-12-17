@@ -1,5 +1,5 @@
 .pad-section {
-	padding: 30px 0;
+	padding: 50px 0;
 	background-color: #edffd4;
 }
 body, html {
@@ -201,7 +201,10 @@ hr
 
 
 /**/
-Donate_form.well{
+.Donate_form.well{
   padding:20px;
   padding-left:100px;
+}
+.lead{
+  font-size:16px;
 }
