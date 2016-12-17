@@ -1,0 +1,79 @@
+    body{
+        font-family:Arial;
+    }
+
+    #head{
+        height: 1000px;
+    }
+    p{
+        font-size: 20px;
+    }
+
+
+    header{
+    	height: 100px;
+    	background: #dbdbdb;
+    	width: 100%;
+    	z-index: 10;
+    	position: fixed;
+    }
+
+    .dude{  margin-left: -80px;
+            width: 1295px;
+            height: 250px;
+            background-color: lightgrey;
+            margin-bottom:-40px;
+            text-align: center; 
+    }
+
+
+
+    .fixed-social-icons {
+        background: grey; no-repeat;          
+        border: 1px;
+        height: 160px !important;
+        width: 41px !important;
+        text-align: center;
+        position: fixed;
+        left: 0;
+        top: 200px;        
+        padding-top: 8px;
+        border-radius-top:100%;
+        }
+
+     
+
+
+    .fa-stack:hover {
+        background-color: transparent;     ;
+    }
+
+    .fa-lg:hover {
+         background-color: yellow;
+        width: 40px;
+        height: 164;
+        -moz-transform: rotate(720deg);
+        -webkit-transform: rotate(720deg);
+        -ms--transform: rotate(720deg);
+        transform: rotate(720deg);
+        -webkit-transition: all 0.4s;
+        -moz-transition: all 0.4s;
+        -o-transition: all 0.4s;
+        -ms-transition: all 0.4s;
+        transition: all 0.4s;
+        border-radius: 100%;             
+        
+    }
+
+    .circle:hover::after {
+      background: #5c5eae;
+      border-radius: 50%;
+      -webkit-transform: scale(.9);
+      transform: scale(.9);
+    }
+
+   
+
+
+
+
