@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ARAVALI</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link type='text/css' href='ms.css' rel='stylesheet' />
+</head>
+<body>
+<div class="container">
+    <a class="toggleMenu" href="#">Menu</a>
+    <ul class="nav">
+        <li>
+            <a href ="#">Home</a>
+        </li>
+        <li>
+            <a href="#">Thrust Area</a>
+            <ul>
+                <li>
+                    <a href="#">Capacity Enhancement</a>
+                    <ul>
+                        <li><a href="#">COSAP</a></li>
+                        <li><a href="#">Perspective Plan</a></li>
+                        <li><a href="#">Livelihood Prespective Plan</a></li>
+                        <li><a href="#">Fellowship</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Sector-Building</a>
+                    <ul>
+                        <li><a href="#">Internship</a></li>
+                        <li><a href="#">Human Resource Support</a></li>
+                        <li><a href="#">Organisational Development</a></li>
+                        <li><a href="#">Flagship Training Program</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">Innovation</a>
+                    <ul>
+                        <li><a href="#">Family Livelihood Resource Center(FLRC)</a></li>
+                        <li><a href="#">Women farmer producing company</a></li>
+                        <li><a href="#">Essential Learning On Health</a></li>
+                        <li><a href="#">Community Based Micro Finance</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a href ="#">Poverty & Targeting</a>
+                </li>
+                <li>
+                    <a href="#">Knowledge Building</a>
+                    <ul>
+                        <li><a href="#">Sectral Research</a></li>
+                        <li><a href="#">Publications</a></li>
+                    </ul>
+                </li>
+                </ul>
+        </li>
+            <li>
+                <a href="#">Partners</a>
+                <ul>
+                    <li>
+                        <a href="#">Ngo Partners</a>
+                        <ul>
+                            <li><a href="#">New Registration</a></li>
+                            <li><a href="#">Partners Lists</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Donors</a>
+                        </li>
+                    </ul>
+        </li>
+
+        <li>
+            <a href ="#">Career</a>
+        </li>
+        <li>
+            <a href="#">Publications</a>
+            <ul>
+                <li>
+                    <a href="#">Studies</a>
+                    <ul>
+                        <li><a href="#">District Human Development Report</a></li>
+                        <li><a href="#">WASSAN Study</a></li>
+                        <li><a href="#">Sector Reform Study</a></li>
+                        <li><a href="#">Participitory processes in watershed Development Programme</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        </ul>
+    </div>
+<script>
+$(document).ready(function() {
+$(".toggleMenu").css("display", "none");
+$(".nav li").hover(function() {
+$(this).addClass('hover');
+}, function() {
+$(this).removeClass('hover');
+});
+});
+</script>
+<script>
+    $(document).ready(function() {
+    var ww = document.body.clientWidth;
+    if (ww < 800) {
+        $(".toggleMenu").css("display", "inline-block");
+        $(".nav li a").click(function() {
+            $(this).parent("li").toggleClass('hover');
+        });
+    } else {
+        $(".toggleMenu").css("display", "none");
+        $(".nav li").hover(function() {
+            $(this).addClass('hover');
+        }, function() {
+            $(this).removeClass('hover');
+        });
+    }
+});
+</script>
+<script>
+    $(".nav li a").each(function() {
+        if ($(this).next().length > 0) {
+            $(this).addClass("parent");
+        };
+    })
+    if (ww < 800) {
+        $(".toggleMenu").css("display", "inline-block");
+        $(".nav li a.parent").click(function(e) {
+            e.preventDefault();
+            $(this).parent("li").toggleClass('hover');
+        });
+    } else {
+        $(".toggleMenu").css("display", "none");
+        $(".nav li").hover(function() {
+            $(this).addClass('hover');
+        }, function() {
+            $(this).removeClass('hover');
+        });
+     }
+
+</script>
+<script>
+    $(".toggleMenu").click(function(e) {
+        e.preventDefault();
+        $(".nav").toggle();
+    });
+
+    if (ww < 800) {
+        $(".toggleMenu").css("display", "inline-block");
+        $(".nav").hide();
+    } else {
+        $(".toggleMenu").css("display", "none");
+        $(".nav li").hover(function() {
+            $(this).addClass('hover');
+        }, function() {
+            $(this).removeClass('hover');
+        });
+    }
+</script>
+<script>
+    var ww = document.body.clientWidth;
+    $(document).ready(function() {
+        $(".toggleMenu").click(function(e) {
+            e.preventDefault();
+            $(".nav").toggle();
+        });
+        $(".nav li a").each(function() {
+            if ($(this).next().length > 0) {
+                $(this).addClass("parent");
+            };
+        })
+        adjustMenu();
+    });
+    function adjustMenu() {
+        if (ww < 800) {
+            $(".toggleMenu").css("display", "inline-block");
+            $(".nav").hide();
+            $(".nav li a.parent").click(function(e) {
+                e.preventDefault();
+                $(this).parent("li").toggleClass('hover');
+            });
+        } else {
+            $(".toggleMenu").css("display", "none");
+            $(".nav li").hover(function() {
+                $(this).addClass('hover');
+            }, function() {
+                $(this).removeClass('hover');
+            });
+        }
+    }
+    $(window).bind('resize orientationchange', function() {
+        ww = document.body.clientWidth;
+        adjustMenu();
+    });
+
+</script>
+<script>
+    $(document).ready(function() {
+        $(".toggleMenu").click(function(e) {
+            e.preventDefault();
+            $(this).toggleClass("active");
+            $(".nav").toggle();
+        });
+    });
+
+    if (ww < 800) {
+        $(".toggleMenu").css("display", "inline-block");
+        if (!$(".toggleMenu").hasClass("active")) {
+            $(".nav").hide();
+        } else {
+            $(".nav").show();
+        }
+        $(".nav li").unbind('mouseenter mouseleave');
+        $(".nav li a.parent").unbind("click").bind("click", function(e){
+            e.preventDefault();
+            $(this).parent("li").toggleClass('hover');
+        });
+    } else {
+        $(".toggleMenu").css("display", "none");
+        $(".nav").show();
+        $(".nav li").removeClass("hover");
+        $(".nav li a").unbind("click");
+        $(".nav li").unbind('mouseenter mouseleave').bind('mouseenter mouseleave', function() {
+            $(this).toggleClass('hover');
+        });
+    }
+</script>
+
+</body>
+</html>
